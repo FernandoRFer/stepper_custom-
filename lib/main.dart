@@ -54,39 +54,69 @@ class _StepperExampleState extends State<StepperExample> {
       },
       steps: <AppStep>[
         AppStep(
-          title: const Text('Step 11 title'),
+          title: const Text('1 title'),
           label: const SizedBox(
-              height: 50, child: Center(child: Text('Step 1 title'))),
-          content: Container(
-            height: 600,
-            color: Colors.amber,
+              height: 50,
+              child: Center(
+                  child: Text(
+                '1 title',
+                style: TextStyle(fontSize: 18),
+              ))),
+          content: Card(
+            child: Container(
+              height: 600,
+              color: const Color.fromARGB(255, 212, 212, 212),
+            ),
           ),
         ),
         AppStep(
-          title: const Text('Step 12 title'),
+          title: const Text('2 title'),
           label: const SizedBox(
-              height: 50, child: Center(child: Text('Step 1 title'))),
-          content: Container(
-            height: 600,
-            color: Colors.white,
+              height: 50,
+              child: Center(
+                  child: Text(
+                '2 title',
+                style: TextStyle(fontSize: 18),
+              ))),
+          content: Card(
+            child: Container(
+              height: 650,
+              color: const Color.fromARGB(255, 4, 84, 90),
+            ),
           ),
         ),
         AppStep(
-          title: const Text('Step 13 title'),
+          title: const Text('3 title'),
           label: const SizedBox(
-              height: 50, child: Center(child: Text('Step 1 title'))),
-          content: Container(
-            height: 700,
-            color: Colors.black,
+              height: 50,
+              child: Center(
+                  child: Text(
+                '3 title',
+                style: TextStyle(fontSize: 18),
+              ))),
+          content: Card(
+            child: Container(
+              height: 700,
+              color: Colors.black,
+            ),
           ),
         ),
         AppStep(
           label: const SizedBox(
-              height: 50, child: Center(child: Text('Step 1 title'))),
-          title: const Text('Step 2 title'),
-          content: Container(
-            height: 500,
-            color: Colors.red,
+              height: 50,
+              child: Center(
+                  child: Text(
+                '4 title',
+                style: TextStyle(fontSize: 18),
+              ))),
+          title: const Text(
+            '4 title',
+          ),
+          content: Card(
+            child: Container(
+              height: 500,
+              color: const Color.fromARGB(255, 82, 67, 66),
+            ),
           ),
         ),
       ],

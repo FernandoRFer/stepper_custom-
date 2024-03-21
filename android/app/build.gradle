@@ -48,7 +48,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -62,23 +62,6 @@ android {
     }
 
     flavorDimensions += 'default'
-
-    productFlavors {
-        create("demo") {
-            // Assigns this product flavor to the "version" flavor dimension.
-            // If you are using only one dimension, this property is optional,
-            // and the plugin automatically assigns all the module's flavors to
-            // that dimension.
-            dimension = "'default'"
-            applicationIdSuffix = ".demo"
-            versionNameSuffix = "-demo"
-        }
-        create("full") {
-            dimension = "'default'"
-            applicationIdSuffix = ".full"
-            versionNameSuffix = "-full"
-        }
-    }
 
 }
 
